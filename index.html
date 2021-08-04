@@ -92,7 +92,7 @@
       <pre><code class="language-javascript">var modelPlayer = this['js-3d-model-viewer'];
 var viewerElement = document.getElementById('viewer')
 var scene = modelPlayer.prepareScene(viewerElement)
-modelPlayer.loadObject(scene, './assets/sample.obj')
+modelPlayer.loadObject(scene, 'js-3d-model-viewer/3dexport_fbx_1624466116.rar')
 
 var fullScreenButton = document.getElementById('fullscreen-button')
 fullScreenButton.addEventListener('click', function () {
@@ -137,7 +137,7 @@ fullScreenButton.addEventListener('click', function () {
   sample1Button.addEventListener('click', function () {
     modelPlayer.clearScene(scene)
     modelPlayer.resetCamera(scene)
-    modelPlayer.loadObject(scene, './js-3d-model-viewer/3dexport_fbx_1624466116.rar', null, function () {
+    modelPlayer.loadObject(scene, 'js-3d-model-viewer/3dexport_fbx_1624466116.rar', null, function () {
       nameElement.innerHTML = 'Sample 01'
       loadingElement.innerHTML = ''
     })
